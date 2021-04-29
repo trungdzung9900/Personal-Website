@@ -1,0 +1,27 @@
+
+.title {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 1%;
+    font-family: 'Lemonada', cursive;
+  }
+img{
+    width: 100%;
+    margin-left: auto;
+}
+.information{
+    display: flex;
+    padding: 4rem;
+    background: rgb(226, 226, 226);
+}
+.left-content{
+    text-align: left;
+    width: 50%;
+}
+.right-content{
+    margin-left: auto;
+}
+.text-information{
+    font-family: 'Lemonada', cursive;
+}
