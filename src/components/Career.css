@@ -55,7 +55,7 @@ body {
     margin-top: 20px;
     text-align: left;
     font-size: 40px;
-    margin-left: 5%;
+    margin-left: 4%;
     font-family: 'Lemonada', cursive;
   }
   @media only screen and (max-width: 1700px) {
@@ -66,3 +66,13 @@ body {
       margin-top: 1.5em;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .title_experience {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 30px;
+        margin-left: 20%;
+        font-family: 'Lemonada', cursive;
+      }
+}

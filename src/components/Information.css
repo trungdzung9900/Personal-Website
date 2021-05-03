@@ -25,3 +25,17 @@ img{
 .text-information{
     font-family: 'Lemonada', cursive;
 }
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 30px;
+        margin-left: 1%;
+        font-family: 'Lemonada', cursive;
+      }
+    img{
+        width: 100%;
+        margin-left: auto;
+    }
+}

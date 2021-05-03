@@ -5,7 +5,20 @@ video {
     position: fixed;
     z-index: -1;
   }
-  
+
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 80px;
+  display:inline-block;
+  vertical-align:middle;
+}
+.circular_image img{
+  width:100%;
+}
+
 .hero-container {
     background-image: url('../assets/background1.JPG');
     background-position: center;
@@ -23,12 +36,14 @@ video {
   
   .hero-container > h1 {
     color: #fff;
-    font-size: 100px;
+    font-size: 70px;
     margin-top: -100px;
   }
+
+  
   
   .hero-container > p {
-    margin-top: 8px;
+    margin-top: 5px;
     color: #fff;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -56,8 +71,17 @@ video {
   
   @media screen and (max-width: 768px) {
     .hero-container > h1 {
-      font-size: 50px;
+      font-size: 30px;
       margin-top: -100px;
+    }
+    .hero-container > .circular_image{
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 90px;
+      display:inline-block;
+      vertical-align:middle;
     }
   
     .hero-container > p {

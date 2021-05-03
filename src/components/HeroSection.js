@@ -8,8 +8,11 @@ function HeroSection() {
         <Element id="my-home" name = "my-home">
         <div className = 'hero-container'>
             {/* <video src="/video/video-2.mp4" autoPlay loop muted/> */}
-          
-            <h1>ADVENTURE AWAITS</h1>
+            <div class="circular_image">
+            <img src="./image/profileImage.jpg"/>
+            </div>
+            
+            <h1>Nguyen Trung Dung</h1>
             <p>Love the life you live. Live the life you love </p>
             <div className="hero-btns">
                 <Button className = 'btns' buttonStyle='btn--outline'

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import './Navbar.css';
 
 function Navbar() {
@@ -28,28 +28,26 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='my-home' 
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              className='navbar-logo' 
-              onClick={closeMobileMenu}>
+          <Link to='my-home'
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500} className='navbar-logo' onClick={closeMobileMenu}>
             Maca
-            <i className ='fab fa-typo3' />
+            <i className='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='my-home' 
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              className='nav-links' 
-              onClick={closeMobileMenu}>
+              <Link to='my-home'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className='nav-links'
+                onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
@@ -68,11 +66,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                 spy={true}
-                 smooth={true}
-                 offset={-50}
-                 duration={500}
-                 to='my-skill'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                to='my-skill'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -81,15 +79,15 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                 spy={true}
-                 smooth={true}
-                 offset={-50}
-                 duration={500}
-                 to='my-exp'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                to='my-exp'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                My Experience 
+                My Experience
               </Link>
             </li>
           </ul>
