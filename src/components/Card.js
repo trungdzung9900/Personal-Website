@@ -1,8 +1,11 @@
 import React from 'react'
 import CardItem from './CardItem'
 import './Card.css'
+import {Element} from 'react-scroll'
 function Card() {
     return (
+        <Element id="my-skill" name="my-skill">
+        
         <div className='cards'>
             <h1> My skills</h1>
             <div className="card_container">
@@ -66,6 +69,7 @@ function Card() {
                 </ul>
             </div>
         </div>
+        </Element>
     )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import '../App.css'
 import './Information.css'
 function Career() {
     return (
+        <Element id='my-inf' name= 'my-inf'>
         <div className="information">
             <div className="left-content">
                 <img src="./image/678.svg" />
@@ -15,6 +17,7 @@ function Career() {
                 </div>
             </div>
         </div>
+        </Element>
     )
 }
 

@@ -2,21 +2,23 @@ import React from 'react';
 import '../App.css';
 import './Career.css';
 import timelineElements from './timelineElement';
-import {ReactComponent as WorkIcon} from "../work.svg"
-import {ReactComponent as SchoolIcon} from "../school.svg"
-import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component"
+import { ReactComponent as WorkIcon } from "../work.svg"
+import { ReactComponent as SchoolIcon } from "../school.svg"
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
+import { Element } from 'react-scroll';
 function Career() {
-  let workIconStyles = {background : "#06D6A0"}
-  let schoolIconStyles = {background : "#f9c74f"}
-    return (
-      <div>
+  let workIconStyles = { background: "#06D6A0" }
+  let schoolIconStyles = { background: "#f9c74f" }
+  return (
+    <div>
       <h1 className="title_experience">My Experience</h1>
       <VerticalTimeline>
         {timelineElements.map((element, index) => {
           let isWorkIcon = element.icon === "work";
           let showButton = element.buttonTex && element.buttonTex;
           return (
+            
             <VerticalTimelineElement
               key={index}
               date={element.date}
@@ -24,6 +26,7 @@ function Career() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
+            <Element id="my-exp" name="my-exp">
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
@@ -41,12 +44,15 @@ function Career() {
                   {element.buttonText}
                 </a>
               )}
+            </Element>
             </VerticalTimelineElement>
+        
           );
         })}
       </VerticalTimeline>
     </div>
-    )
+    
+  )
 }
 
 export default Career

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+
+import {Link} from 'react-scroll'
 import './Navbar.css';
 
 function Navbar() {
@@ -28,7 +28,13 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='my-home' 
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              className='navbar-logo' 
+              onClick={closeMobileMenu}>
             Maca
             <i className ='fab fa-typo3' />
           </Link>
@@ -37,13 +43,23 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='my-home' 
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              className='nav-links' 
+              onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                to='my-inf'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -52,7 +68,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                 spy={true}
+                 smooth={true}
+                 offset={-50}
+                 duration={500}
+                 to='my-skill'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -61,25 +81,18 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                 spy={true}
+                 smooth={true}
+                 offset={-50}
+                 duration={500}
+                 to='my-exp'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 My Experience 
               </Link>
             </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
