@@ -1,9 +1,10 @@
 import React from 'react'
-import '../../App.css'
-import HeroSection from '../HeroSection'
-import Card from '../Card'
-import Career from '../Career'
-import Information from '../Information'
+import '../../App'
+import HeroSection from '../../components/hero/HeroSection'
+import Card from '../../components/CardSkill/Card'
+import Career from '../../components/Career/Career'
+import Information from '../../components/information/Information'
+import Footer from '../../components/footer/Footer'
 function Home(){
     return(
     <>
@@ -11,6 +12,7 @@ function Home(){
     <Information/>
     <Card/>
     <Career/>
+    <Footer/>
     </>
     )
 }

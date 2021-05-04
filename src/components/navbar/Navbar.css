@@ -1,34 +1,34 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 90px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: auto;
+}
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-right: 20%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
   
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 1500px;
-  }
-  
-  .navbar-logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-  }
+
   
   .fa-typo3 {
     margin-left: 0.5rem;
@@ -38,26 +38,27 @@
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 15px;
+    grid-gap: 10px;
     list-style: none;
-    text-align: right;
-    width: 100vw;
+    text-align: center;
+    width: 67vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-left: 11rem;
   }
+  
   
   .nav-item {
     height: 80px;
   }
-  
   .nav-links {
     color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    height: 100%;
+    height: 90%;
   }
+
   
   .nav-links:hover {
     border-bottom: 4px solid #fff;
@@ -155,5 +156,18 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .nav-menu {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 10px;
+      list-style: none;
+      text-align: center;
+      width: 40vw;
+      justify-content: end;
+      font-size: 20px;
+      margin-left: 11rem;
     }
   }

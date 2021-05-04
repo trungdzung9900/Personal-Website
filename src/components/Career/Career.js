@@ -1,9 +1,9 @@
 import React from 'react';
-import '../App.css';
+import '../../App.js';
 import './Career.css';
 import timelineElements from './timelineElement';
-import { ReactComponent as WorkIcon } from "../work.svg"
-import { ReactComponent as SchoolIcon } from "../school.svg"
+import { ReactComponent as WorkIcon } from "../../work.svg"
+import { ReactComponent as SchoolIcon } from "../../school.svg"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
 import { Element } from 'react-scroll';
@@ -11,6 +11,7 @@ function Career() {
   let workIconStyles = { background: "#06D6A0" }
   let schoolIconStyles = { background: "#f9c74f" }
   return (
+    <Element id="my-exp" name="my-exp">
     <div>
       <h1 className="title_experience">My Experience</h1>
       <VerticalTimeline>
@@ -26,7 +27,7 @@ function Career() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
-            <Element id="my-exp" name="my-exp">
+              
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
@@ -44,13 +45,13 @@ function Career() {
                   {element.buttonText}
                 </a>
               )}
-            </Element>
             </VerticalTimelineElement>
         
           );
         })}
       </VerticalTimeline>
     </div>
+    </Element>
     
   )
 }

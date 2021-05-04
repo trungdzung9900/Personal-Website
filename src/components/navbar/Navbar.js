@@ -33,8 +33,8 @@ function Navbar() {
             smooth={true}
             offset={-50}
             duration={500} className='navbar-logo' onClick={closeMobileMenu}>
-            Maca
-            <i className='fab fa-typo3' />
+            TrDung
+            <i className="fas fa-dove"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

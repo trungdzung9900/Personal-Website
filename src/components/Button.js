@@ -19,8 +19,10 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
+  if(buttonStyle === 'btn--primary'){
   return (
-    <Link to='my-inf' 
+    
+    <Link to='my-contact' 
       spy={true}
       smooth={true}
       offset={-50}
@@ -34,5 +36,25 @@ export const Button = ({
         {children}
       </button>
     </Link>
-  );
+  )
+  }
+  else{
+    return (
+    
+      <Link to='my-inf' 
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500} 
+        className='btn-mobile'>
+        <button
+          className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+          onClick={onClick}
+          type={type}
+        >
+          {children}
+        </button>
+      </Link>
+    )
+  }
 };

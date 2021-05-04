@@ -2,17 +2,19 @@
 .title {
     margin-top: 20px;
     text-align: left;
-    font-size: 40px;
-    margin-left: 1%;
+    font-size: 50px;
+    margin-left: 4rem;
     font-family: 'Lemonada', cursive;
   }
 img{
-    width: 100%;
+    width: 90%;
     margin-left: auto;
 }
+
 .information{
     display: flex;
     padding: 4rem;
+    height: 20%;
     background: rgb(226, 226, 226);
 }
 .left-content{
@@ -24,18 +26,28 @@ img{
 }
 .text-information{
     font-family: 'Lemonada', cursive;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10%;
 }
 
 @media screen and (max-width: 768px) {
-    .title {
-        margin-top: 20px;
-        text-align: left;
-        font-size: 30px;
-        margin-left: 1%;
-        font-family: 'Lemonada', cursive;
-      }
     img{
         width: 100%;
         margin-left: auto;
     }
+    h1.title {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 30px;
+        font-family: 'Lemonada', cursive;
+      }
 }
+@media only screen and (min-width: 1024px) {
+    h1.title {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 50px;
+        font-family: 'Lemonada', cursive;
+      }
+  }
