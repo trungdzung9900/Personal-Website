@@ -12,9 +12,9 @@ function Career() {
             </div>
             <div className="right-content" >
                 <div className="text-information">
-                    My name is Nguyen Trung Dung, I come from Ha Noi, Viet Nam, I am 22 year old.<br/>
+                    My name is Nguyen Trung Dung, I come from Ha Noi, Viet Nam, I am 22 years old.<br/>
                     I am passionate about music, photography, sports and programming. I am working as a back end development <br/>
-                    This is my website, hope you will have an interesting experience with this website
+                    This is my website, hope you will have an interesting experience.
                 </div>
             </div>
         </div>

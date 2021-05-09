@@ -17,7 +17,7 @@ function Career() {
       <VerticalTimeline>
         {timelineElements.map((element, index) => {
           let isWorkIcon = element.icon === "work";
-          let showButton = element.buttonTex && element.buttonTex;
+          let showButton = element.buttonText && element.buttonText;
           return (
             
             <VerticalTimelineElement
@@ -40,7 +40,8 @@ function Career() {
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  href = {element.link}
+                  target="_blank"
                 >
                   {element.buttonText}
                 </a>

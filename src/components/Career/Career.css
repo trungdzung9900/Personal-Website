@@ -36,19 +36,19 @@ body {
   }
   
   .workButton {
-    background-color: #06d6a0;
+    background-color: #75b2bd;
   }
   
   .workButton:hover {
-    background-color: #0ac593;
+    background-color: #75b2bd;
   }
   
   .schoolButton {
-    background-color: #f9c74f;
+    background-color: #ddaf6b;
   }
   
   .schoolButton:hover {
-    background-color: #f3bc3c;
+    background-color: #ddaf6b;
   }
 
 .title_experience {
