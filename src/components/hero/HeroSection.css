@@ -85,7 +85,7 @@ video {
     }
   
     .hero-container > p {
-      font-size: 30px;
+      font-size: 20px;
     }
   
     .btn-mobile {
@@ -96,4 +96,11 @@ video {
     .btn {
       width: 100%;
     }
+  }
+  @media screen and (max-width:375) {
+    .hero-container > p {
+      font-size: 15px;
+    }
+  
+    
   }

@@ -80,3 +80,25 @@ body {
         font-family: 'Lemonada', cursive;
       }
 }
+@media screen and (max-width: 375px) {
+  .workButton {
+    background-color: #75b2bd;
+    font-size: 10px;
+  }
+  
+  .workButton:hover {
+    background-color: #75b2bd;
+    font-size: 10px;
+  }
+  
+  .schoolButton {
+    background-color: #ddaf6b;
+    font-size: 10px;
+  }
+  
+  .schoolButton:hover {
+    background-color: #ddaf6b;
+    font-size: 10px;
+  }
+
+}
