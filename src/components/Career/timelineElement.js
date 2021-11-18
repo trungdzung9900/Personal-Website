@@ -5,7 +5,7 @@ let timelineElements = [
         location: "CMC Global, 80 Dich Vong Hau Street",
         description: "Working as backend developer role in project.",
         buttonText: "View my company",
-        date: "September 2020 - now",
+        date: "August 2021 - now",
         icon: "work",
         link: "https://www.cmc.com.vn/cmc-global/"
     },
@@ -15,7 +15,7 @@ let timelineElements = [
         location: "VMO Group, 18 Ton That Thuyet Street.",
         description: "Working as backend developer role in project.",
         buttonText: "View my company",
-        date: "September 2020 - now",
+        date: "September 2020 - August 2021",
         icon: "work",
         link: "https://www.vmo.group/"
     },
