@@ -10,7 +10,7 @@ function HeroSection() {
         <div className = 'hero-container'>
             {/* <video src="/video/video-2.mp4" autoPlay loop muted/> */}
             <div className="circular_image">
-            <img src="./image/profileImage.jpg"/>
+            <img src="./image/000064.jpg"/>
             </div>
             
             <h1>Nguyen Trung Dung</h1>
