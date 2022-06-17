@@ -38,11 +38,11 @@ function Card() {
                         src="image/html4.png"
                         text="HTML"
                     />
-                    {/* <CardItem
-                        src="image/react.png"
-                        text="React"
-                        path='/services'
-                    /> */}
+                    <CardItem
+                        src="image/aws_logo_smile_1200x630.png"
+                        text="AWS"
+                        path='AWS'
+                    />
                     <CardItem
                         src="image/Python.png"
                         text="Python"
