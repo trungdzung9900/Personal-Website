@@ -37,8 +37,8 @@ function Footer() {
                     <div className="text-right-info">
                     <div>Contact:</div>
                     <div>
-                    <i className="fas fa-phone-square-alt"></i>
-                    <span>Phone Number: (+84)911781386</span>
+                    {/* <i className="fas fa-phone-square-alt"></i>
+                    <span>Phone Number: (+84)911781386</span> */}
                     
                     </div>
                     <div>
