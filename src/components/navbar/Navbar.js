@@ -90,6 +90,19 @@ function Navbar() {
                 My Experience
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                to='my-contact'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                My Information
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
